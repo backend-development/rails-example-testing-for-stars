@@ -16,15 +16,15 @@
 
 
 $(document).ready(function(){
-  $('.info').append('<button class="load_info">load info</button>');
+  $('.info').append('<button class="load_info">load info from api</button>');
   $('.info').append('<div class="output"></div>');
-  console.log('done adding html!');
+  console.log('done preparing page for ajax-requests');
 
   $('.load_info').on('click', function() {
     $.getJSON("/users/count.json", function(data){
-      $('.info .output').html("There are " + data.count + " Users");
+      $('.info .output').html("There are " + data.count + " Users in the Database");
       console.log('done loading!');
     });
-  });    
+  });
 });
 
