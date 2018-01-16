@@ -13,12 +13,12 @@
 ActiveRecord::Schema.define(version: 20151201130756) do
 
   create_table "users", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "middle_initial"
-    t.string   "last_name"
-    t.integer  "no_stars",       default: 0, null: false
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.string "first_name"
+    t.string "middle_initial"
+    t.string "last_name"
+    t.integer "no_stars", default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
